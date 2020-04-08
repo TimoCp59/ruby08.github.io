@@ -4,18 +4,25 @@ def signup
     return mdp
 end
 
-def login
+def login    
     puts "Entrez votre mot de passe"
-    lemdp = gets.chomp
-    return lemdp
-    if (mdp = lemdp)
-        then puts "écran"
-        else puts "recommencer"
+    mdp2 = gets.chomp
+    return mdp2
 end
 
+def welcome(mdp, mdp2)
+    while mdp2 != mdp
+        puts "Mdp incorrect veuillez réessayer"
+        mdp2 = gets.chomp
+    end
+    puts "welcome on nasa website"
+
+end
+    
 def perfom
     mdp = signup
-    lemdp = login
+    mdp2 = login
+    welcome(mdp, mdp2)
 end
 
 perfom

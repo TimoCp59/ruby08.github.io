@@ -1,3 +1,5 @@
+### Partie 1###
+
 def say_hello
 	puts "Tu n'as pas dit bonjour ! Du coup ... Dis bonjour" 
 end
@@ -8,6 +10,8 @@ end
 
 perform
 
+### Partie 2###
+
 def say_hello(first_name)
 	puts "Tu n'as pas dit bonjour ! Du coup ... Dis bonjour #{first_name}" 
 end
@@ -17,6 +21,8 @@ def perform
 end
 
 perform
+
+###Partie 3###
 
 def say_hello
 	puts "Quel est ton nom mon petit ?"
